@@ -30,7 +30,8 @@ public class TestPlay {
     private static Stream<Arguments> streamDataOfChecks() {
         return Stream.of(
                 Arguments.of(new ArrayList<>(Arrays.asList(1, 2, 4, 4, 2, 3, 4, 1, 7)), true),
-                Arguments.of(new ArrayList<>(Arrays.asList(0, 2, 9, 2, 3, 5, 7)), false)
+                Arguments.of(new ArrayList<>(Arrays.asList(1, 2, 9, 4, 3, 5, 4)), true),
+                Arguments.of(new ArrayList<>(Arrays.asList(1, 2, 9, 2, 3, 5, 7)), false)
         );
     }
 

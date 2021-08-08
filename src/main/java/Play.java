@@ -27,7 +27,7 @@ public class Play {
     }
 
     public static boolean checkArray(ArrayList<Integer> array) {
-        if(array.contains(1) || array.contains(4)) {
+        if(array.contains(1) && array.contains(4)) {
             return true;
         } return false;
     }
